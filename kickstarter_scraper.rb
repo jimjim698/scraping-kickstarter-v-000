@@ -16,7 +16,7 @@ kickstarter.css("li.project.grid_4").each do |project|
       :percent_funded => project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
     }
   end
-  projects
+  project
 end
 
 create_project_hash
@@ -26,5 +26,5 @@ create_project_hash
 #title: project.css("h2.bbcard_name strong a").text
 # project.css("div.project-thumbnail a img").attribute("src").value
 #project.css("p.bbcard_blurb").text
-#project.css("ul.project-meta").text 
+#project.css("ul.project-meta").text
 #percent_funded: project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
